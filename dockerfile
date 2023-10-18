@@ -1,6 +1,6 @@
 FROM ubuntu:latest
 RUN apt-get update && apt-get install -y openjdk-11-jdk
-COPY Hello.java /app/
+COPY hello.java /app/
 WORKDIR /app/
-RUN javac Hello.java
-CMD ["java","Hello"]
+RUN javac hello.java
+CMD ["java","hello"]
